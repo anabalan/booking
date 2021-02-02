@@ -1,0 +1,1020 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    font-family: 'Montserrat', sans-serif;
+    color: #FAFDFF;
+}
+
+body {
+    background-color: #22252A;
+    background-image: url(../img/bg-body.svg);
+    background-size: cover;
+    background-position: top;
+}
+
+/* Básicos */
+
+h1 {
+    width: 100%;
+    font-size: 32px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+    line-height: 30px;
+}
+
+h2 {
+    width: 100%;
+    font-size: 18px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+    line-height: 30px;
+}
+
+h3 {
+    width: 100%;
+    font-size: 16px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+    line-height: 30px;
+}
+
+p {
+    width: 100%;
+    font-size: 16px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: normal;
+    line-height: 30px;
+}
+
+.small {
+    width: 100%;
+    font-size: 12px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: normal;
+    line-height: 30px;
+}
+
+.subtitle {
+    color: #BEC0C2;
+}
+
+.btn-small-pri {
+    width: auto;
+    text-decoration: none;
+    border: 2px solid #0896FF;
+    border-radius: 6px;
+    background-color: #0896FF;
+    font-family: 'Rubik', sans-serif;
+    font-size: 16px;
+    color: #FAFDFF;
+    padding: 12px 24px 12px 24px;
+    transition: 400ms ease-in-out;
+    cursor: pointer;
+}
+
+.btn-small-pri:hover {
+    border: 2px solid #FAFDFF;
+    background-color: #FAFDFF;
+    color: #0896FF;
+}
+
+.btn-small-sec {
+    width: auto;
+    text-decoration: none;
+    border: 2px solid #FAFDFF;
+    border-radius: 6px;
+    background-color: transparent;
+    font-family: 'Rubik', sans-serif;
+    font-size: 16px;
+    color: #FAFDFF;
+    padding: 12px 24px 12px 24px;
+    transition: 400ms ease-in-out;
+    cursor: pointer;
+}
+
+.btn-small-sec:hover {
+    background-color: #FAFDFF;
+    color: #0896FF;
+}
+
+.btn-pri {
+    width: auto;
+    text-decoration: none;
+    border: 2px solid #27323B;
+    border-radius: 6px;
+    background-color: #27323B;
+    font-family: 'Rubik', sans-serif;
+    font-size: 16px;
+    color: #FAFDFF;
+    padding: 14px 32px 14px 32px;
+}
+
+.btn-sec {
+    width: auto;
+    text-decoration: none;
+    border: 2px solid #FAFDFF;
+    border-radius: 6px;
+    background-color: transparent;
+    font-family: 'Rubik', sans-serif;
+    font-size: 16px;
+    color: #FAFDFF;
+    padding: 14px 32px 14px 32px;
+}
+
+input {
+    width: 100%;
+    text-decoration: none;
+    border: none;
+    border-radius: 6px;
+    background-color: #F5F5F5;
+    font-family: 'Rubik', sans-serif;
+    color: #27323B;
+    font-size: 16px;
+    padding: 12px 24px 12px 24px;
+}
+
+.input {
+    width: 100%;
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+.input img {
+    position: absolute;
+    border: none;
+    background: #F5F5F5;
+    outline: none;
+    right: 12px;
+    top: 34px;
+}
+
+.tab {
+    display: inline-flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    border: none;
+    background-color: transparent;
+    padding: 12px 32px 12px 32px;
+    font-family: 'Rubik', sans-serif;
+    font-size: 16px;
+}
+
+.tab img {
+    margin-right: 12px;
+}
+
+.active {
+    border-bottom: 2px solid #FAFDFF;
+}
+
+/* Menu */
+
+header {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding: 25px;
+    position: fixed;
+    z-index: 100;
+    transition: 400ms ease-in-out;
+    color: #FAFDFF;
+}
+
+.logo {
+    width: 160px;
+}
+
+.navbar {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 0;
+    overflow: hidden;
+    transition: 250ms ease-in-out;
+    text-transform: uppercase;
+}
+
+.navbar.active {
+    height: 90vh;
+}
+
+.menu.active {
+    background-color: #22252A;
+}
+
+.newMenu {
+    background-color: #22252A;
+}
+
+.nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+.nav li {
+    width: 100%;
+    padding: 25px 0;
+    list-style-type: none;
+    text-align: center;
+}
+
+.nav li a {
+    text-decoration: none;
+    transition: 300ms;
+    font-family: 'Rubik', sans-serif;
+    font-weight: 500;
+}
+
+.btn-hamburguer {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    background-color: inherit;
+    border: none;
+    height: 50px;
+    width: 50px;
+    outline: 0;
+}
+
+.btn-hamburguer span {
+    background-color: #FAFDFF;
+    height: 6px;
+    width: 100%;
+    border-radius: 50px;
+    transition: 200ms all ease-in-out;
+}
+
+.btn-hamburguer span+span {
+    margin-top: 7px;
+}
+
+.btn-hamburguer.active span:first-child {
+    transform: translateX(100%);
+    opacity: 0;
+}
+
+.btn-hamburguer.active span:nth-child(2) {
+    transform: translateY(0) rotate(-45deg);
+}
+
+.btn-hamburguer.active span:nth-child(3) {
+    transform: translateY(-18px) rotate(45deg);
+}
+
+/* Introdução */
+
+.intro {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 80vh;
+    padding: 25px;
+    background-image: url(../img/bg-topo.png);
+    background-position: center;
+    background-size: cover;
+}
+
+.intro h1 {
+    text-align: center;
+    font-weight: bolder;
+}
+
+.intro p {
+    text-align: center;
+    margin-top: 32px;
+}
+
+.tabs {
+    width: 100%;
+    margin-top: 40px;
+    overflow-x: scroll;
+    overflow-y: hidden;
+    white-space: nowrap;
+}
+
+::-webkit-scrollbar {
+    display: none;
+}
+
+.section-busca {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    padding: 0 25px;
+    margin-top: -150px;
+}
+
+.busca {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    background-color: #0896FF;
+    border-radius: 24px;
+    padding: 24px;
+}
+
+.busca h2 {
+    text-transform: uppercase;
+}
+
+.input+.input {
+    margin-top: 16px;
+}
+
+.busca .btn-small-pri {
+    background-color: #22252A;
+    border: 2px solid #22252A;
+    width: 100%;
+    margin-top: 24px;
+    transition: 400ms ease-in-out;
+    cursor: pointer;
+}
+
+.busca .btn-small-pri:hover {
+    border: 2px solid #FAFDFF;
+    background-color: #FAFDFF;
+    color: #0896FF;
+}
+
+/* Covid */
+
+.alert {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    padding: 0 25px;
+    margin-top: 32px;
+}
+
+.covid {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    padding: 32px;
+    border-radius: 24px;
+    background-color: #2A2E34;
+}
+
+.covid-content {
+    width: 100%;
+}
+
+.covid p {
+    margin: 16px 0;
+}
+
+.covid img {
+    display: none;
+}
+
+/* Comunidade */
+
+.comunidade {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    padding: 25px;
+    margin-top: 32px;
+}
+
+.cards-comunidade {
+    width: 100%;
+    margin-top: 16px;
+    overflow-x: scroll;
+    overflow-y: hidden;
+    white-space: nowrap;
+}
+
+.card-comunidade {
+    display: inline-flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    width: 75%;
+}
+
+.card-comunidade img {
+    width: 100%;
+    border-radius: 24px;
+}
+
+.card-content {
+    width: 100%;
+    margin-top: 16px;
+}
+
+.card-comunidade+.card-comunidade {
+    margin-left: 16px;
+}
+
+.vermais {
+    position: relative;
+}
+
+.vermais .card-content {
+    text-align: center;
+    position: absolute;
+    margin-top: auto;
+}
+
+.vermais button {
+    text-transform: uppercase;
+    margin-top: 16px;
+}
+
+/* Sobre o Brasil */
+
+.sobre-brasil {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    padding: 25px;
+    margin-top: 64px;
+}
+
+.swiper-container {
+    width: 100%;
+    margin-top: 16px;
+    position: relative;
+}
+
+.swiper-slide {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.swiper-slide img {
+    width: 100%;
+}
+
+.swiper-content {
+    width: 100%;
+    margin-top: 16px;
+}
+
+.swiper-button-next-unique, .swiper-button-prev-unique {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 48px;
+    height: 48px;
+    background-color: #FAFDFF;
+    color: #0896FF;
+    border-radius: 50px;
+}
+
+.swiper-arrow {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    width: calc(100% - 100px);
+    position: absolute;
+    z-index: 1;
+}
+
+/* Destaque Brasil */
+
+.destaque-brasil {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding: 0 80px;
+    margin-top: 32px;
+}
+
+.card-destaque {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: flex-end;
+    height: 30vh;
+    margin-bottom: 16px;
+    border-radius: 24px;
+}
+
+.card-preco {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: flex-start;
+    margin-right: 32px;
+    padding: 12px;
+    background-color: #FFFFFF;
+    color: #27323B;
+    border-radius: 0 0 4px 4px;
+}
+
+.card-preco h3 {
+    color: #27323B;
+}
+
+.card-preco p {
+    color: #27323B;
+}
+
+.card-destaque .card-content {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: flex-start;
+    width: 100%;
+    padding: 25px;
+}
+
+.florianopolis {
+    width: 63.5%;
+    background-image: url(../img/florianopolis.png);
+    background-position: bottom;
+    background-size: cover;
+}
+
+.curitiba {
+    width: 35%;
+    background-image: url(../img/curitiba.png);
+    background-position: bottom;
+    background-size: cover;
+}
+
+.itajai {
+    width: 30%;
+    background-image: url(../img/itajai.png);
+    background-position: bottom;
+    background-size: cover;
+}
+
+.balneario {
+    background-image: url(../img/balneario.png);
+    background-position: bottom;
+    background-size: cover;
+    width: 40%;
+}
+
+.paraty {
+    width: 27%;
+    background-image: url(../img/paraty.png);
+    background-position: bottom;
+    background-size: cover;
+}
+
+/* Newsletter */
+
+.newsletter {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 100%;
+    padding: 48px 25px;
+    margin-top: 32px;
+    background-color: #2A2E34;
+    position: relative;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin-top: 16px;
+}
+
+form input {
+    width: 100%;
+    margin-bottom: 16px;
+}
+
+form .btn-small-pri {
+    width: 100%;
+}
+
+.newsletter-aviao {
+    width: 100%;
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-end;
+    align-content: flex-end;
+    position: absolute;
+}
+
+.newsletter-aviao img {
+    width: 30%;
+    margin-right: 64px;
+}
+
+.checkbox {
+    width: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 16px;
+}
+
+.checkbox input {
+    width: 24px;
+    height: 24px;
+    background-color: transparent;
+    border: 1px solid #FAFDFF;
+    margin-right: 16px;
+}
+
+/* Inpiração */
+
+.inspiracao {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding: 0 80px;
+    margin-top: 32px;
+}
+
+.card-inspiracao {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+    align-items: flex-end;
+    height: 30vh;
+    margin-top: 16px;
+    border-radius: 24px;
+}
+
+.card-inspiracao .card-content {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: flex-start;
+    width: 100%;
+    padding: 25px;
+}
+
+.inspiracao :nth-child(3) {
+    width: 49.2%;
+    background-image: url(../img/noticia_5.png);
+    background-position: bottom;
+    background-size: cover;
+}
+
+.inspiracao :nth-child(4) {
+    width: 49.2%;
+    background-image: url(../img/noticia_4.png);
+    background-position: bottom;
+    background-size: cover;
+}
+
+.inspiracao :nth-child(5) {
+    width: 32.2%;
+    background-image: url(../img/noticia_1.png);
+    background-position: bottom;
+    background-size: cover;
+}
+
+.inspiracao :nth-child(6) {
+    width: 32.2%;
+    background-image: url(../img/noticia_3.png);
+    background-position: bottom;
+    background-size: cover;
+}
+
+.inspiracao :nth-child(7) {
+    width: 32.2%;
+    background-image: url(../img/noticia_2.png);
+    background-position: bottom;
+    background-size: cover;
+}
+
+/* Casas */
+
+.descubra {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    padding: 25px 80px;
+    margin-top: 32px;
+}
+
+.cards-descubra {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: space-between;
+    margin-top: 16px;
+}
+
+.card-descubra {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    width: 25%;
+}
+
+.card-descubra img {
+    width: 100%;
+    height: 200px;
+}
+
+.card-descubra+.card-descubra {
+    margin-left: 16px;
+}
+
+/* Footer */
+
+footer {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 100%;
+    padding: 32px 25px;
+    margin-top: 32px;
+    background-color: #2A2E34;
+}
+
+footer ul {
+    width: 20%;
+    list-style-type: none;
+}
+
+footer li+li {
+    margin-top: 24px;
+}
+
+footer hr {
+    width: 100%;
+    margin: 32px 0;
+    border-color: #BEC0C2;
+    background-color: #BEC0C2;
+    border-radius: 24px;
+}
+
+footer .small {
+    margin-top: 16px;
+}
+
+.atalhos {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    width: 100%;
+}
+
+.atalhos p {
+    width: 45%;
+    color: #BEC0C2;
+    margin-bottom: 16px;
+}
+
+/* Checkpoints */
+
+@media screen and (max-width: 1024px) {
+    .sobre-brasil {
+        display: none;
+    }
+    .destaque-brasil {
+        display: none;
+    }
+    .inspiracao {
+        display: none;
+    }
+    .descubra {
+        display: none;
+    }
+    .newsletter-aviao {
+        display: none;
+    }
+    footer ul :nth-child(n) {
+        display: none;
+    }
+}
+
+@media screen and (min-width: 700px) {
+    .card-comunidade {
+        width: 40%;
+    }
+    .newsletter {
+        padding: 48px 80px;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    /* Header */
+    header {
+        padding: 16px 80px;
+    }
+    .body {
+        padding: 16px 80px;
+    }
+    h1 {
+        font-size: 60px;
+    }
+    /* Introdução */
+    .tabs {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: 90px 0 -100px 0;
+    }
+    .section-busca {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        padding: 0 80px;
+        margin-top: -100px;
+    }
+    .busca {
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: flex-end;
+        align-content: center;
+        flex-wrap: wrap;
+        width: 100%;
+        background-color: #0896FF;
+        border-radius: 24px;
+        padding: 32px;
+    }
+    .busca .input {
+        width: 20%;
+    }
+    .busca .btn-small-pri {
+        width: auto;
+    }
+    /* Alerta covid */
+    .alert {
+        margin-top: 32px;
+        padding: 0 80px;
+    }
+    .covid {
+        flex-direction: row;
+        justify-content: space-between;
+        padding: 34px;
+    }
+    .covid-content {
+        width: 75%;
+    }
+    .covid img {
+        display: inherit;
+    }
+    /* Comunidade */
+    .comunidade {
+        padding: 0 80px;
+    }
+    .cards-comunidade {
+        width: 100%;
+        display: flex;
+        align-items: flex-start;
+        justify-content: center;
+    }
+    .card-comunidade {
+        display: inline-flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        width: 80%;
+    }
+    /* Sobre o Brasil */
+    .sobre-brasil {
+        padding: 0 80px;
+    }
+    /* Newsletter */
+    form {
+        flex-direction: row;
+    }
+    form input {
+        width: 25%;
+        margin-bottom: 0;
+        margin-right: 16px;
+    }
+    form .btn-small-pri {
+        width: auto;
+    }
+    .inspiracao {
+        margin-top: 64px;
+    }
+    /* Footer */
+    footer {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: flex-start;
+        padding: 32px 80px;
+    }
+    footer ul {
+        margin-bottom: 32px;
+        text-align: left;
+    }
+    footer li {
+        width: 80%;
+    }
+    .atalhos {
+        margin-bottom: 32px;
+    }
+}
+
+@media screen and (min-width: 1240px) {
+    /* Menu */
+    .btn-hamburguer {
+        display: none;
+    }
+    .navbar {
+        width: 70%;
+        height: auto;
+    }
+    .nav {
+        justify-content: flex-end;
+        padding: 0;
+    }
+    .nav li {
+        display: inline-block;
+        width: auto;
+        margin-left: 16px;
+        font-size: 0.9em;
+        color: #FEFEFE;
+    }
+    .section-busca {
+        margin-top: -85px;
+    }
+}
+
+@media screen and (min-width: 1920px) {
+    /* Header */
+    header, .section-busca, .alert, .comunidade, .sobre-brasil, .destaque-brasil, .inspiracao, .sobre-brasil, .descubra, footer {
+        padding: 16px 300px;
+    }
+    .swiper-arrow {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        align-items: center;
+        width: calc(100% - 550px);
+        position: absolute;
+        z-index: 1;
+    }
+}

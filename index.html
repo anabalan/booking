@@ -1,0 +1,494 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" type="text/css" href="assets/css/main.css">
+        <!-- Swiper -->
+        <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.css" />
+        <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+        <title>Booking.com</title>
+    </head>
+
+    <body>
+        <header class="menu">
+            <img src="./assets/img/Booking-logo.svg" alt="Logo Booking.com" class="logo">
+            <!-- Menu hamburger -->
+            <button class="btn-hamburguer">
+                <span class="hamburger"></span>
+                <span class="hamburger"></span>
+                <span class="hamburger"></span>
+            </button>
+            <!-- Menu itens -->
+            <nav class="navbar">
+                <ul class="nav">
+                    <li><a href="#">BRL</a></li>
+                    <li><a href="#"><img src="assets/img/brasil-icon.svg"></a></li>
+                    <li><a href="#"><img src="assets/img/help-icon.svg"></a></li>
+                    <li><a href="#">Anuncie sua propriedade</a></li>
+                    <li><a class="btn-small-sec" href="#">Cadastre-se</a></li>
+                    <li><a class="btn-small-pri" href="#">Login</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <!-- Intro -->
+        <section id="intro" class="intro">
+            <h1 id="title">Booking.com</h1>
+            <p>Encontre ofertas em hotéis, casas, apartamentos e muito mais.</p>
+
+            <div class="tabs">
+                <button class="tab active">
+                    <img src="assets/img/Cama.svg">Hospedagem
+                </button>
+                <button class="tab">
+                    <img src="assets/img/Avião.svg">Voos
+                </button>
+                <button class="tab">
+                    <img src="assets/img/Carro.svg">Aluguel de carros
+                </button>
+                <button class="tab">
+                    <img src="assets/img/Atração.svg">Atrações
+                </button>
+                <button class="tab">
+                    <img src="assets/img/Táxi.svg">Táxis (aeroporto)
+                </button>
+            </div>
+        </section>
+
+        <!-- Busca -->
+        <section id="section-busca" class="section-busca">
+            <div class="busca">
+                <h2>Buscar ofertas</h2>
+                <div class="input">
+                    <label class="small">Destino
+                        <input type="text" name="local" placeholder="Digite o local">
+                        <img src="assets/img/Cama.svg">
+                    </label>
+                </div>
+                <div class="input">
+                    <label class="small">Data de entrada
+                        <input type="text" name="entrada" placeholder="MM/DD/YYYY">
+                        <img src="assets/img/Calendário.svg">
+                    </label>
+                </div>
+                <div class="input">
+                    <label class="small">Data de partida
+                        <input type="text" name="partida" placeholder="MM/DD/YYYY">
+                        <img src="assets/img/Calendário.svg">
+                    </label>
+                </div>
+                <div class="input">
+                    <label class="small">Pessoas
+                        <input type="text" name="pessoas" placeholder="Adultos  |  Crianças  |  Quartos">
+                        <img src="assets/img/User.svg">
+                    </label>
+                </div>
+                <button class="btn-small-pri">Pesquisar</button>
+                <div class="checkbox">
+                    <input type="checkbox" id="check" name="check">
+                    <label class="small" for="check">Quero receber o link de graça para baixar o aplicativo
+                        Booking.com</label>
+                </div>
+            </div>
+        </section>
+
+        <!-- Alerta COVID -->
+        <section id="alert" class="alert">
+            <div class="covid">
+                <img src="assets/img/alert.svg">
+                <div class="covid-content">
+                    <h2>Ajuda relacionada ao Coronavírus (COVID-19)</h2>
+                    <p>
+                        Por favor, verifique se existem restrições de viagem. Viagens podem ser permitidas apenas para
+                        determinados fins e, especificamente, viagens turísticas podem não ser permitidas.
+                    </p>
+                </div>
+                <button class="btn-small-sec">VER MAIS</button>
+            </div>
+        </section>
+
+        <!-- Comunidades -->
+        <section id="comunidade" class="comunidade">
+            <h2>Comunidades</h2>
+            <p class="subtitle">Conecte-se com outros viajantes</p>
+            <div class="cards-comunidade">
+                <div class="card-comunidade">
+                    <img src="assets/img/bg-1.png">
+                    <div class="card-content">
+                        <h3>Brasil</h3>
+                        <p>Comunidade de viagem</p>
+                        <p class="subtitle">142.970 viajantes</p>
+                    </div>
+                </div>
+                <div class="card-comunidade">
+                    <img src="assets/img/bg-3.png">
+                    <div class="card-content">
+                        <h3>Papo de viagem</h3>
+                        <p>Fórum</p>
+                        <p class="subtitle">142.970 viajantes</p>
+                    </div>
+                </div>
+                <div class="card-comunidade">
+                    <img src="assets/img/bg-2.png">
+                    <div class="card-content">
+                        <h3>Argentina</h3>
+                        <p>Comunidade de viagem</p>
+                        <p class="subtitle">142.100 viajantes</p>
+                    </div>
+                </div>
+                <div class="card-comunidade vermais">
+                    <img src="assets/img/bg-vermais.png">
+                    <div class="card-content">
+                        <h3>Mais comunidades</h3>
+                        <p>10.103.767 viajantes</p>
+                        <button class="btn-small-pri">Ver tudo</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Conheça o Brasil -->
+        <section id="sobre-brasil" class="sobre-brasil">
+            <h2>Conheça o Brasil</h2>
+            <p class="subtitle">Estes destinos incríveis tem muito a oferecer</p>
+            <!-- Swiper -->
+            <div class="swiper-container">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <img src="assets/img/rio_de-janeiro.png">
+                        <div class="swiper-content">
+                            <h3>Rio de Janeiro</h3>
+                            <p class="subtitle">1.200 acomodações</p>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="assets/img/guaruja.png">
+                        <div class="swiper-content">
+                            <h3>Guarujá</h3>
+                            <p class="subtitle">1.200 acomodações</p>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="assets/img/ubatuba.png">
+                        <div class="swiper-content">
+                            <h3>Ubatuba</h3>
+                            <p class="subtitle">1.200 acomodações</p>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="assets/img/porto-de-galinhas.png">
+                        <div class="swiper-content">
+                            <h3>Porto de Galinhas</h3>
+                            <p class="subtitle">1.200 acomodações</p>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="assets/img/arraial-do-cabo.png">
+                        <div class="swiper-content">
+                            <h3>Arraila do Cabo</h3>
+                            <p class="subtitle">1.200 acomodações</p>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="assets/img/buzios.png">
+                        <div class="swiper-content">
+                            <h3>Búzios</h3>
+                            <p class="subtitle">1.200 acomodações</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Setas -->
+            <div class="swiper-arrow">
+                <div class="swiper-button-prev-unique">
+                    <img src="assets/img/arrow-prev.svg" alt="">
+                </div>
+                <div class="swiper-button-next-unique">
+                    <img src="assets/img/arrow-next.svg" alt="">
+                </div>
+            </div>
+        </section>
+
+        <!-- Destaques Brasil -->
+        <section id="destaque-brasil" class="destaque-brasil">
+            <div class="card-destaque florianopolis">
+                <div class="card-preco">
+                    <p class="small">Preço médio</p>
+                    <h3>R$182</h3>
+                </div>
+                <div class="card-content">
+                    <h3>Florianópolis</h3>
+                    <p class="subtitle">1.200 acomodações</p>
+                </div>
+            </div>
+            <div class="card-destaque curitiba">
+                <div class="card-preco">
+                    <p class="small">Preço médio</p>
+                    <h3>R$182</h3>
+                </div>
+                <div class="card-content">
+                    <h3>Curitiba</h3>
+                    <p class="subtitle">1.200 acomodações</p>
+                </div>
+            </div>
+            <div class="card-destaque itajai">
+                <div class="card-preco">
+                    <p class="small">Preço médio</p>
+                    <h3>R$182</h3>
+                </div>
+                <div class="card-content">
+                    <h3>Itajaí</h3>
+                    <p class="subtitle">1.200 acomodações</p>
+                </div>
+            </div>
+            <div class="card-destaque balneario">
+                <div class="card-preco">
+                    <p class="small">Preço médio</p>
+                    <h3>R$182</h3>
+                </div>
+                <div class="card-content">
+                    <h3>Balneário Camboriú</h3>
+                    <p class="subtitle">1.200 acomodações</p>
+                </div>
+            </div>
+            <div class="card-destaque paraty">
+                <div class="card-preco">
+                    <p class="small">Preço médio</p>
+                    <h3>R$182</h3>
+                </div>
+                <div class="card-content">
+                    <h3>Paraty</h3>
+                    <p class="subtitle">1.200 acomodações</p>
+                </div>
+            </div>
+        </section>
+        <!-- Newsletter -->
+        <section id="newsletter" class="newsletter">
+            <h2>Economize tempo, economize dinheiro!</h2>
+            <p class="subtitle">Inscreva-se e enviaremos as melhores ofertas para você</p>
+            <form>
+                <input type="text" id="name" name="name" placeholder="Digite seu e-mail">
+                <button class="btn-small-pri">Assinar</button>
+            </form>
+            <div class="checkbox">
+                <input type="checkbox" id="check" name="check">
+                <label class="small" for="check">Quero receber o link de graça para baixar o aplicativo Booking.com</label>
+            </div>
+        </section>
+        <div class="newsletter-aviao">
+            <img src="assets/img/aviao.svg">
+        </div>
+
+        <!-- Inspire-se -->
+        <section id="inspiracao" class="inspiracao">
+            <h2>Inspire-se para sua próxima viagem</h2>
+            <p class="subtitle">Conteúdos para auxiliar nas suas viagens</p>
+            <div class="card-inspiracao florianopolis">
+                <div class="card-content">
+                    <h3>Dicas de viagens super simples e sustentáveis</h3>
+                    <p class="subtitle">7 pequenas atitudes que podem fazer uma grande diferença na sua próxima viagem</p>
+                </div>
+            </div>
+            <div class="card-inspiracao florianopolis">
+                <div class="card-content">
+                    <h3>Dicas de viagens super simples e sustentáveis</h3>
+                    <p class="subtitle">7 pequenas atitudes que podem fazer uma grande diferença na sua próxima viagem</p>
+                </div>
+            </div>
+            <div class="card-inspiracao florianopolis">
+                <div class="card-content">
+                    <h3>Dicas de viagens super simples e sustentáveis</h3>
+                    <p class="subtitle">7 pequenas atitudes que podem fazer uma grande diferença na sua próxima viagem</p>
+                </div>
+            </div>
+            <div class="card-inspiracao florianopolis">
+                <div class="card-content">
+                    <h3>Dicas de viagens super simples e sustentáveis</h3>
+                    <p class="subtitle">7 pequenas atitudes que podem fazer uma grande diferença na sua próxima viagem</p>
+                </div>
+            </div>
+            <div class="card-inspiracao florianopolis">
+                <div class="card-content">
+                    <h3>Dicas de viagens super simples e sustentáveis</h3>
+                    <p class="subtitle">7 pequenas atitudes que podem fazer uma grande diferença na sua próxima viagem</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Acomodações -->
+        <section id="sobre-brasil" class="sobre-brasil">
+            <h2>Pesquise por tipos de acomodação</h2>
+            <p class="subtitle">Acomodações de todos os tipos</p>
+            <!-- Swiper -->
+            <div class="swiper-container">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <img src="assets/img/hotel.png">
+                        <div class="swiper-content">
+                            <h3>Hotéis</h3>
+                            <p class="subtitle">1.200 hotéis</p>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="assets/img/apt.png">
+                        <div class="swiper-content">
+                            <h3>Apartamentos</h3>
+                            <p class="subtitle">1.200 apartamentos</p>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="assets/img/resort.png">
+                        <div class="swiper-content">
+                            <h3>Resorts</h3>
+                            <p class="subtitle">1.200 resorts</p>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="assets/img/vila.png">
+                        <div class="swiper-content">
+                            <h3>Vilas</h3>
+                            <p class="subtitle">1.200 vilas</p>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="assets/img/chale.png">
+                        <div class="swiper-content">
+                            <h3>Chalés Alpinos</h3>
+                            <p class="subtitle">1.200 chalés</p>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="assets/img/campo.png">
+                        <div class="swiper-content">
+                            <h3>Casas de campo</h3>
+                            <p class="subtitle">1.200 casas</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Setas -->
+            <div class="swiper-arrow">
+                <div class="swiper-button-prev-unique">
+                    <img src="assets/img/arrow-prev.svg" alt="">
+                </div>
+                <div class="swiper-button-next-unique">
+                    <img src="assets/img/arrow-next.svg" alt="">
+                </div>
+            </div>
+        </section>
+
+        <!-- Descubra -->
+        <section id="descubra" class="descubra">
+            <h2>Descubra</h2>
+            <p class="subtitle">Destinos que curtimos</p>
+            <div class="cards-descubra">
+                <div class="card-descubra">
+                    <img src="assets/img/italia.png">
+                    <div class="card-content">
+                        <h3>Itália</h3>
+                        <p class="subtitle">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut justo nisl,
+                            venenatis...</p>
+                    </div>
+                </div>
+                <div class="card-descubra">
+                    <img src="assets/img/franca.png">
+                    <div class="card-content">
+                        <h3>França</h3>
+                        <p class="subtitle">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut justo nisl,
+                            venenatis...</p>
+                    </div>
+                </div>
+                <div class="card-descubra">
+                    <img src="assets/img/argentina.png">
+                    <div class="card-content">
+                        <h3>Argentina</h3>
+                        <p class="subtitle">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut justo nisl,
+                            venenatis...</p>
+                    </div>
+                </div>
+                <div class="card-descubra vermais">
+                    <img src="assets/img/mais-paises.png">
+                    <div class="card-content">
+                        <h3>Mais países</h3>
+                        <p>193 países</p>
+                        <button class="btn-small-pri">Ver tudo</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Footer -->
+        <footer>
+            <button class="btn-small-sec">Anuncie sua propriedade</button>
+            <hr>
+            <div class="atalhos">
+                <p><a href="#">Versão para desktop</a></p>
+                <p><a href="#">Termos e Condições</a></p>
+                <p><a href="#">Privacidade e Cookies</a></p>
+                <p><a href="#">Sobre a Booking.com</a></p>
+            </div>
+            <ul>
+                <li class="subtitle">Países</li>
+                <li class="subtitle">Regiões</li>
+                <li class="subtitle">Cidades</li>
+                <li class="subtitle">Bairros</li>
+                <li class="subtitle">Aeroportos</li>
+                <li class="subtitle">Hotéis</li>
+                <li class="subtitle">Locais de interesse</li>
+            </ul>
+            <ul>
+                <li class="subtitle">Casas e apartamentos</li>
+                <li class="subtitle">Apartamentos</li>
+                <li class="subtitle">Resorts</li>
+                <li class="subtitle">Villas</li>
+                <li class="subtitle">Hostels</li>
+                <li class="subtitle">Cama e Cafés (B&Bs)</li>
+                <li class="subtitle">Pousadas</li>
+            </ul>
+            <ul>
+                <li class="subtitle">Lugares únicos para ficar</li>
+                <li class="subtitle">Todos os destinos</li>
+                <li class="subtitle">Avaliações</li>
+                <li class="subtitle">Comunidades de Viagem</li>
+                <li class="subtitle">Ofertas sazonais e de viagem</li>
+            </ul>
+            <ul>
+                <li class="subtitle">Aluguel de Carros</li>
+                <li class="subtitle">Pesquisa de voos</li>
+                <li class="subtitle">Reservas de restaurantes</li>
+                <li class="subtitle">Booking.com para Consultores de Viagem</li>
+            </ul>
+            <ul>
+                <li class="subtitle">Perguntas Frequentes sobre o Coronavírus (COVID-19)</li>
+                <li class="subtitle">Sobre a Booking.com</li>
+                <li class="subtitle">Contato - Serviço de Apoio ao Cliente</li>
+                <li class="subtitle">Central de Ajuda ao Parceiro</li>
+                <li class="subtitle">Careers</li>
+                <li class="subtitle">Sustentabilidade</li>
+                <li class="subtitle">Assessoria de Imprensa</li>
+                <li class="subtitle">Central de recursos de segurança</li>
+                <li class="subtitle">Relação com investidores</li>
+                <li class="subtitle">Termos e Condições</li>
+                <li class="subtitle">Contestação dos parceiros</li>
+                <li class="subtitle">Política de Privacidade e Cookies</li>
+                <li class="subtitle">Contato corporativo</li>
+                <li class="subtitle">Nós cobrimos o menor preço!</li>
+            </ul>
+            <hr>
+            <p class="small">Direitos autorais © 1996–2021 Booking.com™. Todos os direitos reservados.</p>
+            <p class="small">Seu número de referência é: <strong>B8CCB00</strong></p>
+            <p class="small">
+                <a href="#">Mapa do site</a>
+            </p>
+        </footer>
+
+        <!-- JS -->
+        <script type="text/javascript" src="assets/js/script.js"></script>
+        <!-- Swiper -->
+        <script src="https://unpkg.com/swiper/swiper-bundle.js"></script>
+        <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+        <script type="text/javascript" src="assets/js/swiper.js"></script>
+
+    </body>
+</html>
