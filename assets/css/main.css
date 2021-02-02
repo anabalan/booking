@@ -320,7 +320,7 @@ header {
     align-items: center;
     width: 100%;
     padding: 0 25px;
-    margin-top: -150px;
+    margin-top: -75px;
 }
 
 .busca {
@@ -884,7 +884,7 @@ footer .small {
         align-items: center;
         width: 100%;
         padding: 0 80px;
-        margin-top: -75px;
+        margin-top: -50px;
     }
     .busca {
         flex-direction: row;
@@ -998,7 +998,7 @@ footer .small {
         color: #FEFEFE;
     }
     .section-busca {
-        margin-top: -85px;
+        margin-top: -65px;
     }
 }
 
@@ -1016,5 +1016,9 @@ footer .small {
         width: calc(100% - 550px);
         position: absolute;
         z-index: 1;
+    }
+
+    .section-busca {
+        margin-top: -125px;
     }
 }
